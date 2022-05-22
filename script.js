@@ -42,4 +42,3 @@ var result2 = isPal([3,2,1,1,2,3]);
 console.log(result2);
 
 
-// add some junk in here to work with git
