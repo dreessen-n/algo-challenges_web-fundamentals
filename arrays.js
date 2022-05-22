@@ -29,7 +29,25 @@ while (start < end) {
 	end -= 2;
 }
 
+// reversing an array
 
+var myArray = ['a', 'b', 'c', 'd', 'e'];
 
+var tempArr = [];
 
+console.log(myArray.length);
 
+var i = 0;
+var x = myArray.length;
+while (i < x) {
+	tempArr += myArray.pop();
+	i++;
+}
+
+i = 0;
+
+while (i < x) {
+	myArray += tempArr[i];
+	i++;
+}
+console.log(myArray);
