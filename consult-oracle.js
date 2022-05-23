@@ -23,3 +23,16 @@ var lifesAnswers = [
     "Very doubtful."
 ];
 
+function getRandomInt(min, max) {
+	return Math.floor(Math.random() * (max - min)) + min;
+}
+
+function getAns() {
+	var i = getRandomInt(1, 20);	
+	var answer = lifesAnswers[i];
+	return answer
+}
+
+console.log(getAns());
+
+	
