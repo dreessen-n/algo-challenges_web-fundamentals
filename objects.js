@@ -1,6 +1,6 @@
 // Array of Objects
 
-var pokémon = [
+var pokemon = [
     { "id": 1,   "name": "Bulbasaur",  "types": ["poison", "grass"] },
     { "id": 5,   "name": "Charmeleon", "types": ["fire"] },
     { "id": 9,   "name": "Blastoise",  "types": ["water"] },
@@ -25,5 +25,11 @@ var pokémon = [
     { "id": 146, "name": "Moltres",    "types": ["fire", "flying"] },
     { "id": 148, "name": "Dragonair",  "types": ["dragon"] }
 ];
+
+for (var i = 0; i < pokemon.length; i++) {
+	if (pokemon[i].id > 99) {
+		console.log(pokemon[i].name);
+	}
+}
 
 
