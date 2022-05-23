@@ -32,4 +32,12 @@ for (var i = 0; i < pokemon.length; i++) {
 	}
 }
 
+// console.log pokemon objects whose ids are evenly divisibly by 3
+
+for (var i = 0; i < pokemon.length; i++) {
+	if ((pokemon[i].id % 3) == 0) {
+		console.log(pokemon[i].name);
+	}
+}
+
 
