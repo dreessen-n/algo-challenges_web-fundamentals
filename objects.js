@@ -53,3 +53,41 @@ for (var i = 0; i < pokemon.length; i++) {
 		console.log(pokemon[i].name);
 	}
 }
+
+// console.log the names of pokemon whose only type is 'poison'
+
+console.log(`\nprint names of pokemon whose only type is "poison"\n`);
+
+for (var i = 0; i < pokemon.length; i++) {
+	if (pokemon[i].types == 'poison') {
+		console.log(pokemon[i].name);
+	}
+}
+
+// console.log the first type of all the pokemon whose second type is 'flying'
+
+console.log(`\nprint the first type of all the pokemon whose second type is "flying"\n`);
+
+for (var i = 0; i < pokemon.length; i++) {
+	if (pokemon[i].types[1] == 'flying') {
+		console.log(pokemon[i].types[0]);
+	}
+}
+
+// BONUS: console.log the reverse of the names of the pokemon whose only type is 'poison'
+
+console.log(`\nBONUS: print the reverse of the names of the pokemon whose only type is 'poison'\n`);
+
+var temp = [];
+var revNames = [];
+for (var i = 0; i < pokemon.length; i++) {
+	if (pokemon[i].types == 'poison') {
+		temp.push(pokemon[i].name);
+	}
+}
+
+for (var x = temp.length; x > 0; x--) {
+	revNames.push(temp[x-1]);
+}
+
+console.log(`revNames: ${revNames}\n`);
