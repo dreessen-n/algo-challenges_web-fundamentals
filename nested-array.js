@@ -23,13 +23,13 @@ function isPresent2d(arr2d, value) {
 		}	
 	}
 }
-
-var present = isPresent2d(arr2d, 6);
+var num = 1;
+var present = isPresent2d(arr2d,num);
 
 if (present == true) {
-	console.log(`yes, the value is present in the array`);
+	console.log(`yes, the value ${num} is present in the array`);
 } else {
-	console.log(`no, the value is not present in the array`);
+	console.log(`no, the value ${num} is not present in the array`);
 }
 
 
