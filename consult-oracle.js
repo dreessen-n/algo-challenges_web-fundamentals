@@ -32,7 +32,7 @@ function getAns() {
 	var answer = lifesAnswers[i];
 	return answer
 }
-
-console.log(getAns());
+let question = prompt('What is your question?', '?');
+alert(getAns());
 
 	
