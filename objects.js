@@ -26,6 +26,8 @@ var pokemon = [
     { "id": 148, "name": "Dragonair",  "types": ["dragon"] }
 ];
 
+console.log(`\nprint pokemon name if id over 99:\n`);
+
 for (var i = 0; i < pokemon.length; i++) {
 	if (pokemon[i].id > 99) {
 		console.log(pokemon[i].name);
@@ -34,10 +36,20 @@ for (var i = 0; i < pokemon.length; i++) {
 
 // console.log pokemon objects whose ids are evenly divisibly by 3
 
+console.log(`\nprint pokemon name if id is divisible by 3:\n`);
+
 for (var i = 0; i < pokemon.length; i++) {
 	if ((pokemon[i].id % 3) == 0) {
 		console.log(pokemon[i].name);
 	}
 }
 
+// console.log the pokemon objects that have more than one type
 
+console.log(`\nprint pokemon name if it has multiple types:\n`);
+
+for (var i = 0; i < pokemon.length; i++) {
+	if ((pokemon[i].types).length > 1) {
+		console.log(pokemon[i].name);
+	}
+}
