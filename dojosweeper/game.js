@@ -47,11 +47,10 @@ function howMany(i, j, element) {
       sum = theDojo[i][j] + sum;
     }
   } 
-
+  console.log({i, j});
+  var total = theDojo[i][j] + sum;
+  console.log(total);
   console.log(`sum: ${sum}`);
-
-  console.log('here');
-
 
 }
     
