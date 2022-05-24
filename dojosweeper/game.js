@@ -31,6 +31,7 @@ function render(theDojo) {
 
 function howMany(i, j, element) {
   console.log({i, j});
+  console.log({element});
   alert("TODO - determine how many ninjas are hiding in adjacent squares");
 }
     
