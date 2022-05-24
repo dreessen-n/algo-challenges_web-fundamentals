@@ -32,7 +32,27 @@ function render(theDojo) {
 function howMany(i, j, element) {
   console.log({i, j});
   console.log({element});
-  alert("TODO - determine how many ninjas are hiding in adjacent squares");
+  console.log(theDojo[i][j]);
+  // REMEMBER THIS TO PRINT ON BLOCK: element.innerHTML = 4;
+  // alert("TODO - determine how many ninjas are hiding in adjacent squares");
+
+  var sum = 0;
+  var start_i = i-1;
+  var end_i = i+2;
+  var start_j = j-1;
+  var end_j = j+2;
+
+  for (i = start_i; i < end_i; i++) {
+    for (j = start_j; j < end_j; j++) {
+      sum = theDojo[i][j] + sum;
+    }
+  } 
+
+  console.log(`sum: ${sum}`);
+
+  console.log('here');
+
+
 }
     
 // BONUS CHALLENGES
