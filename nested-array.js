@@ -23,7 +23,7 @@ function isPresent2d(arr2d, value) {
 		}	
 	}
 }
-var num = 1;
+var num = 9;
 var present = isPresent2d(arr2d,num);
 
 if (present == true) {
