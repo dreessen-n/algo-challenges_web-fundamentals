@@ -33,10 +33,12 @@ function howMany(i, j, element) {
   console.log({i, j});
   console.log({element});
   console.log(theDojo[i][j]);
+
   // REMEMBER THIS TO PRINT ON BLOCK: element.innerHTML = 4;
   // alert("TODO - determine how many ninjas are hiding in adjacent squares");
 
   var sum = 0;
+  var clkSquareValue = theDojo[i][j];
   var start_i = i-1;
   var end_i = i+2;
   var start_j = j-1;
@@ -47,9 +49,9 @@ function howMany(i, j, element) {
       sum = theDojo[i][j] + sum;
     }
   } 
-  console.log({i, j});
-  var total = theDojo[i][j] + sum;
-  console.log(total);
+
+  var total = sum - clkSquareValue;
+  console.log({total});
   console.log(`sum: ${sum}`);
 
 }
