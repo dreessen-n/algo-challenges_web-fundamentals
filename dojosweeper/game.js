@@ -68,7 +68,7 @@ function howMany(i, j, element) {
   var total = sum - clkSquareValue;
 
   // the total number of hiding ninjas in adjacet squares
-  console.log(`total minus click square: ${total}`);
+  console.log(`total ninjas under adjacent squarews (minus selected square): ${total}`);
 
   // Bonus 1. add number onto the button
   element.innerHTML = total;
