@@ -44,15 +44,31 @@ function howMany(i, j, element) {
   var start_j = j-1;
   var end_j = j+2;
 
+  if (start_i < 0) {
+    start_i = 0;
+  } 
+
+  if (start_j < 0) {
+    start_j = 0;
+  }
+
+  if (end_i > theDojo.length - 1) {
+    end_i = theDojo.length;
+  }
+
+  if (end_j > theDojo.length -1) {
+    end_j = theDojo.length;
+  }
+
   for (i = start_i; i < end_i; i++) {
-    for (j = start_j; j < end_j; j++) {
-      sum = theDojo[i][j] + sum;
-    }
+	for (j = start_j; j < end_j; j++) {
+	  sum = theDojo[i][j] + sum;
+	}
   } 
 
   var total = sum - clkSquareValue;
-  console.log({total});
-  console.log(`sum: ${sum}`);
+  console.log(`total minus click square: ${total}`);
+  element.innerHTML = total;
 
 }
     
